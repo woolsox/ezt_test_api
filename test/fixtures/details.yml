@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dos_contact: MyString
+  parking: MyString
+  load_in: MyString
+  load_in_location: MyString
+  door_time: MyString
+  set_time: MyString
+  backline: MyString
+  hospitality: MyString
+  green_room: MyString
+  showers: MyString
+  laundry: MyString
+  wifi: MyString
+  misc: MyString
+
+two:
+  dos_contact: MyString
+  parking: MyString
+  load_in: MyString
+  load_in_location: MyString
+  door_time: MyString
+  set_time: MyString
+  backline: MyString
+  hospitality: MyString
+  green_room: MyString
+  showers: MyString
+  laundry: MyString
+  wifi: MyString
+  misc: MyString
