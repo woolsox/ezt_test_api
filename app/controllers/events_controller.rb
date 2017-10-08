@@ -1,32 +1,34 @@
 class EventsController < ApplicationController
   def index
-    @events = event.all
+    @events = Event.all
+    render json: @events
   end
 
   def show
-    @event = event.find(params[:id])
+    @event = Event.find(params[:id])
+    render json: @event
   end
 
   def new
-    @event = event.new
+    @event = Event.new
   end
 
   def edit
-    @event = event.find(params[:id])
+    @event = Event.find(params[:id])
   end
 
   def create
-    @event = event.new(event_params)
+    @event = Event.new(event_params)
     @event.save
   end
 
   def update
-    @event = event.find(params[:id])
+    @event = Event.find(params[:id])
     @event.update(event_params)
   end
 
   def destroy
-    @event = event.find(params[:id])
+    @event = Event.find(params[:id])
     @event.destroy
   end
 
