@@ -17,7 +17,8 @@ class DetailsController < ApplicationController
   end
 
   def create
-    @detail = Detail.new(detail_params)
+    @event = Event.find(params[:event_id])
+    @detail = @event.details.create(detail_params)
     @detail.save
   end
 

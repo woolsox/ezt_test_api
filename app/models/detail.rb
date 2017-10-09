@@ -1,3 +1,4 @@
 class Detail < ApplicationRecord
-  belongs_to :event
+  has_one :event, required: true
+  # validates :event_id, presence: true
 end
